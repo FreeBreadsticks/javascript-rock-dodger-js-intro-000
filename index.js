@@ -191,13 +191,14 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-}
+})
 
 /**
  * @param {string} p The position property
  * @returns {number} The position as an integer (without 'px')
  */
-  })
+  }
+  
   
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
