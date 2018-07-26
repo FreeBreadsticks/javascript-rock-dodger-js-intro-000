@@ -120,7 +120,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval.clear()
+  gameInterval = null
   ROCKS.remove()
   moveDodger().remove()
   window.alert("YOU LOSE!")
