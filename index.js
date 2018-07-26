@@ -86,6 +86,8 @@ function createRock(x) {
        endGame()
      } else if (positionToInteger(rock.style.bottom) > 400) {
        rock.remove()
+     } else {
+       moveRock()
      }
 
     /**
