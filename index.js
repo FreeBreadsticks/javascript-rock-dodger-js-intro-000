@@ -85,7 +85,7 @@ function createRock(x) {
      if (checkCollision(rock)) {
        endGame()
      } else if (positionToInteger(rock.style.bottom) > 400) {
-       moveRock()
+       rock.remove()
      }
 
     /**
