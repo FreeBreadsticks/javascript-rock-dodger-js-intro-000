@@ -161,6 +161,8 @@ function moveDodgerLeft() {
    * 
    */
    var left_side = positionToInteger(DODGER.style.left)
+   console.log(left_side += 4)
+   console.log(DODGER.style.left)
    window.requestAnimationFrame(() => left_side -= 4)
 }
 
