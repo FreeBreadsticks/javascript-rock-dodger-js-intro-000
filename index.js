@@ -175,7 +175,8 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var leftNumbers = DODGER.style.left.replace('px', '')
+  window.requestAnimationFrame(function(){
+    var leftNumbers = DODGER.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
   if (left < 360) {
@@ -193,6 +194,8 @@ function moveDodgerRight() {
  * @param {string} p The position property
  * @returns {number} The position as an integer (without 'px')
  */
+  })
+  
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
