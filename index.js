@@ -140,9 +140,7 @@ function moveDodger(e) {
   }else if(e.which === RIGHT_ARROW){
      e.preventDefault()
     moveDodgerRight()
-  } else if(e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
-     e.preventDefault()
-  }
+  } 
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
