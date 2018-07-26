@@ -179,7 +179,7 @@ function moveDodgerRight() {
   var left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
-    DODGER.style.right = `${left + 4}px`
+    DODGER.style.left = `${left + 4}px`
     // window.requestAnimationFrame(DODGER)
   }
   // implement me!
