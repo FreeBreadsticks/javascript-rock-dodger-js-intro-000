@@ -160,6 +160,7 @@ function moveDodgerLeft() {
  
   if (left > 0) {
     DODGER.style.left = `${left - 4}px`
+    window.requestAnimationFrame(moveDodger)
   }
 
   // implement me!
@@ -170,7 +171,7 @@ function moveDodgerLeft() {
    */
   // var left_side = positionToInteger(DODGER.style.left)
 
-   window.requestAnimationFrame(moveDodger)
+   
 }
 
 function moveDodgerRight() {
