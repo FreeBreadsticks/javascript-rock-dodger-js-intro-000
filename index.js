@@ -121,7 +121,7 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval = null
-  ROCKS.remove()
+  ROCKS.clear()
   moveDodger().remove()
   window.alert("YOU LOSE!")
   
